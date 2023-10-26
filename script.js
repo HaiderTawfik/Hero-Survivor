@@ -74,6 +74,13 @@ function detectCollisionEntityWall(){
 }
 
 /*
+function for when player is hit by enemy, 
+calculate how much to decrease the players health by depending on the enemy's attack and player's defense
+*/
+function decreasePlayerHealth(player){
+}
+
+/*
 function detect collision with player and enemy
 decrease player health as a result, give grace period for player to get away
 i.e. 1 second invicibility to player
@@ -87,6 +94,19 @@ debuff will expire after a certain amount of time
 */
 function setDebuff(debuff){
 }
+
+/*
+function to call when enemy is defeated to remove them from the screen.
+*/
+function enemyDefeated(enemy){
+
+}
+/*
+called when enemy is hit by player sword,
+determine how much to decrease enemy health by depending on the player's attack and enemy's defense
+*/
+function decreaseEnemyHealth(enemy){
+}
 /*
 detect player sword collision with enemy, decrease enemy health as a result, apply a default to the player depending on the enemy,
 skeltetons will have a chance to slow (decrease their speed), ghosts can poison (decrease their health over time), etc.
@@ -95,10 +115,15 @@ function detectCollisionPlayerSwordEnemy(enemy){
 }
 
 /*
-player swing sword function + animation
+playerswing sword function + animation
 */
-function playerSwingSword(){
+function playerSwingSword(player){
 }
+
+
+/*
+add listeners for player movement, attacks, then call movePlayer1 or movePlayer2
+*/
 
 /*
 move player1 with animation function
@@ -113,11 +138,16 @@ function movePlayer2(direction){
 }
 
 /*
+function to detect which player is the closest to an enemy, used in routing algorithm
+*/
+function getClosestPlayer(enemy){
+}
+
+/*
 routing algorithm for enemies that can't go through walls
 find the closest player and move towards them avoiding wall collisions
 */
 function findPathToPlayer(enemy){
-
 }
 
 /*
