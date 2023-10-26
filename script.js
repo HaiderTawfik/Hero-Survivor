@@ -119,8 +119,7 @@ determine how much to decrease enemy health by depending on the player's attack 
 function decreaseEnemyHealth(enemy){
 }
 /*
-detect player sword collision with enemy, decrease enemy health as a result, apply a default to the player depending on the enemy,
-skeltetons will have a chance to slow (decrease their speed), ghosts can poison (decrease their health over time), etc.
+detect player sword collision with enemy, decrease enemy health as a result
 */
 function detectCollisionPlayerSwordEnemy(enemy){
 }
