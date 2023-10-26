@@ -1,4 +1,10 @@
 /*
+Course: SENG 513
+Date October 25, 2023
+Assignment 2
+Name: Haider Tawfik
+UCID: 30097912
+/*
 player class will include things such as their health, attack, defense, etc, and current x, y position, boolean is invicinble for invicibility frames.
 */
 class player{
@@ -47,8 +53,11 @@ class wave{
     //function to spawn chest
     spawnChest(chestLocations){
     }
-    //function to check if wave is over
+    //function to check if wave is over (if enemies left is 0), and to check if game is won (wave is 3 and enemies left is 0)
     isWaveOver(){
+    }
+    //function to start the next wave
+    startNextWave(enemitesToSpawn, enemiesLeft, chestLocations){
     }
 }
 
@@ -97,6 +106,8 @@ function setDebuff(debuff){
 
 /*
 function to call when enemy is defeated to remove them from the screen.
+should also decrement enemys left in the wave
+should check if the wave is finished using the method in the wave class
 */
 function enemyDefeated(enemy){
 
