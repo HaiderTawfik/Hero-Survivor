@@ -99,7 +99,7 @@ Haider Tawfik
     font-size: calc(var(--grid-cell)*2);
     position: absolute;
     top: calc(var(--grid-cell)* 1);
-    right: calc( var(--grid-cell)* 6*2);
+    right: calc( var(--grid-cell)* 2);
  }
  
  .character_spritesheet {
